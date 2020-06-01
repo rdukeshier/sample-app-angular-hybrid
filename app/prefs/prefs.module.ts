@@ -15,6 +15,8 @@ let PREFS_STATES = [ prefsState ];
     UIRouterUpgradeModule.forChild({ states: PREFS_STATES })
   ],
   declarations: [ PrefsComponent ],
+  entryComponents: [ PrefsComponent ],
+
 })
 class PrefsModule {}
 

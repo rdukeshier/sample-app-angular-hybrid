@@ -12,6 +12,7 @@ import { upgradeModule } from "@uirouter/angular-hybrid";
 import { globalModule } from "./global/index";
 import { homeModule } from "./home/index";
 import { mymessagesModule } from './mymessages/index';
+import { prefsAngularJSModule } from './prefs/prefsAngularJSModule';
 
 // Create the angular 1 module "demo".
 //
@@ -19,6 +20,7 @@ import { mymessagesModule } from './mymessages/index';
 // In bootstrap.js, the module is imported, and the components, services, and states are registered.
 export const sampleAppModuleAngularJS = angular.module("sampleapp", [
   uiRouter,
+  prefsAngularJSModule.name,
   upgradeModule.name,
   homeModule.name,
   globalModule.name,
